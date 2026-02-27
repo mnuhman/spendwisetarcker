@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", serif;
+  
+  --color-gold-50: #fdfaf1;
+  --color-gold-100: #f9f1d8;
+  --color-gold-200: #f1e0ae;
+  --color-gold-300: #e6c87a;
+  --color-gold-400: #dbaa4d;
+  --color-gold-500: #d4af37; /* Primary Gold */
+  --color-gold-600: #b88a2d;
+  --color-gold-700: #966926;
+  --color-gold-800: #7a5423;
+  --color-gold-900: #664620;
+  --color-gold-950: #3b260f;
+
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+}
+
+@layer base {
+  :root {
+    --brand-primary: #d4af37;
+    --brand-secondary: #f1e0ae;
+    --brand-tertiary: #b88a2d;
+    --brand-border: rgba(212, 175, 55, 0.2);
+    --brand-shadow: rgba(212, 175, 55, 0.1);
+  }
+
+  .theme-standard {
+    --brand-primary: #f4f4f5;
+    --brand-secondary: #a1a1aa;
+    --brand-tertiary: #71717a;
+    --brand-border: rgba(255, 255, 255, 0.1);
+    --brand-shadow: rgba(255, 255, 255, 0.05);
+  }
+
+  body {
+    @apply bg-zinc-950 text-zinc-100 font-sans antialiased transition-colors duration-500;
+  }
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-secondary) 50%, var(--brand-tertiary) 100%);
+}
+
+.gold-text-gradient {
+  background: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-secondary) 50%, var(--brand-tertiary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.brand-text {
+  color: var(--brand-primary);
+}
+
+.brand-border {
+  border-color: var(--brand-border);
+}
+
+.brand-bg-soft {
+  background-color: var(--brand-shadow);
+}
+
+.brand-shadow {
+  box-shadow: 0 10px 30px var(--brand-shadow);
+}
+
+.premium-card {
+  background: rgba(24, 24, 27, 0.5);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--brand-border);
+  box-shadow: 0 25px 50px -12px var(--brand-shadow);
+}
