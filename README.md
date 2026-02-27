@@ -6,7 +6,7 @@
 
 This contains everything you need to run your app locally.
 
-View your app in : (https:web browser//ais-dev-ys23fru6twbhwgilhuulvq-393471575705.asia-southeast1.run.app/)
+View your app in web browser :https://ais-dev-ys23fru6twbhwgilhuulvq-393471575705.asia-southeast1.run.app/
 
 ## Run Locally
 
